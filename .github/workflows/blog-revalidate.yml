@@ -1,0 +1,25 @@
+name: Ревалидация блога
+
+# Ежедневно сбрасывает кеш блога на боевом сайте, чтобы статьи,
+# у которых наступила дата публикации, появились без деплоя.
+# Дублирует Vercel Cron — нужен, если сайт хостится не на Vercel.
+on:
+  schedule:
+    - cron: '5 3 * * *' # ежедневно, 03:05 UTC (06:05 МСК)
+  workflow_dispatch:
+
+jobs:
+  revalidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Ревалидировать
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: node scripts/publish-scheduled.mjs

@@ -1,0 +1,148 @@
+{
+  "$comment": "Очередь маршрутов для автопубликации. Скрипт scripts/generate-article.mjs берёт первую запись со status=pending, пишет статью и ставит её в расписание. Один маршрут — одна статья.",
+  "defaults": {
+    "author": "Редакция Москва Тревел",
+    "category": {
+      "ru": "Маршруты",
+      "en": "Routes"
+    },
+    "publishIntervalDays": 7,
+    "locales": [
+      "ru",
+      "en"
+    ]
+  },
+  "topics": [
+    {
+      "id": "novodevichy-sunset",
+      "status": "pending",
+      "tour": "modern",
+      "slug": {
+        "ru": "novodevichy-i-pruds",
+        "en": "novodevichy-and-the-pond"
+      },
+      "title": {
+        "ru": "Новодевичий монастырь и пруд на закате: маршрут о тишине посреди Москвы",
+        "en": "Novodevichy Convent and its pond at sunset: a route about silence inside Moscow"
+      },
+      "angle": {
+        "ru": "Белые стены XVI века, отражение в пруду, лебеди и место, где Чайковский придумал «Лебединое озеро». Маршрут для тех, кому нужен не список достопримечательностей, а два часа тишины.",
+        "en": "Sixteenth-century white walls, reflections in the pond, swans, and the place where Tchaikovsky conceived Swan Lake. For travellers who want two hours of quiet, not a checklist."
+      },
+      "keywords": {
+        "ru": [
+          "Новодевичий монастырь",
+          "Новодевичий пруд",
+          "закат",
+          "прогулка",
+          "тихая Москва"
+        ],
+        "en": [
+          "Novodevichy Convent",
+          "Novodevichy pond",
+          "sunset",
+          "walk",
+          "quiet Moscow"
+        ]
+      }
+    },
+    {
+      "id": "vdnkh-retro",
+      "status": "pending",
+      "tour": "metro",
+      "slug": {
+        "ru": "vdnkh-imperiya-fontanov",
+        "en": "vdnkh-empire-of-fountains"
+      },
+      "title": {
+        "ru": "ВДНХ: маршрут по империи фонтанов и золотых колосьев",
+        "en": "VDNKh: a route through an empire of fountains and golden wheat"
+      },
+      "angle": {
+        "ru": "Сталинский ампир в масштабе парка: «Дружба народов» в золоте, павильоны-дворцы союзных республик, ракета «Восток» и «Рабочий и колхозница». Прогулка, которая работает как машина времени.",
+        "en": "Stalinist empire style at park scale: the gilded Friendship of Nations fountain, palace-pavilions of the Soviet republics, the Vostok rocket and Worker and Kolkhoz Woman. A walk that works like a time machine."
+      },
+      "keywords": {
+        "ru": [
+          "ВДНХ",
+          "фонтан Дружба народов",
+          "сталинский ампир",
+          "Космос",
+          "прогулка"
+        ],
+        "en": [
+          "VDNKh",
+          "Friendship of Nations fountain",
+          "Stalinist architecture",
+          "Cosmos pavilion"
+        ]
+      }
+    },
+    {
+      "id": "moscow-city-heights",
+      "status": "pending",
+      "tour": "river",
+      "slug": {
+        "ru": "moskva-siti-s-vysoty",
+        "en": "moscow-city-from-above"
+      },
+      "title": {
+        "ru": "«Москва-Сити» с высоты 360 метров: маршрут для тех, кто не боится стекла под ногами",
+        "en": "Moscow City from 360 metres: a route for travellers who don't mind glass underfoot"
+      },
+      "angle": {
+        "ru": "Скоростной лифт за 40 секунд, панорама на весь город, мороженое на высоте и закат, который здесь длится дольше, чем внизу. Финал — набережная под башнями, когда они загораются.",
+        "en": "A 40-second express lift, a panorama over the whole city, ice cream at altitude and a sunset that lasts longer up here. Ends on the embankment as the towers light up."
+      },
+      "keywords": {
+        "ru": [
+          "Москва-Сити",
+          "смотровая площадка",
+          "Панорама 360",
+          "закат",
+          "небоскрёбы"
+        ],
+        "en": [
+          "Moscow City",
+          "observation deck",
+          "Panorama 360",
+          "sunset",
+          "skyscrapers"
+        ]
+      }
+    },
+    {
+      "id": "kolomenskoye",
+      "status": "pending",
+      "tour": "kremlin",
+      "slug": {
+        "ru": "kolomenskoye-tsarskaya-usadba",
+        "en": "kolomenskoye-royal-estate"
+      },
+      "title": {
+        "ru": "Коломенское: маршрут по царской усадьбе, где Москва заканчивается и начинается Русь",
+        "en": "Kolomenskoye: a route through the tsars' estate where Moscow ends and old Rus begins"
+      },
+      "angle": {
+        "ru": "Церковь Вознесения XVI века над обрывом, яблоневые сады, дуб, под которым по преданию учился Пётр I, и вид на реку, ради которого сюда едут через полгорода.",
+        "en": "The sixteenth-century Church of the Ascension above the cliff, apple orchards, the oak under which Peter the Great supposedly studied, and a river view worth crossing the city for."
+      },
+      "keywords": {
+        "ru": [
+          "Коломенское",
+          "церковь Вознесения",
+          "царская усадьба",
+          "яблоневый сад",
+          "парк"
+        ],
+        "en": [
+          "Kolomenskoye",
+          "Church of the Ascension",
+          "royal estate",
+          "apple orchard",
+          "park"
+        ]
+      }
+    }
+  ]
+}
