@@ -15,7 +15,7 @@
   "topics": [
     {
       "id": "novodevichy-sunset",
-      "status": "pending",
+      "status": "published",
       "tour": "modern",
       "slug": {
         "ru": "novodevichy-i-pruds",
@@ -44,7 +44,8 @@
           "walk",
           "quiet Moscow"
         ]
-      }
+      },
+      "publishedAt": "2026-09-14"
     },
     {
       "id": "vdnkh-retro",
