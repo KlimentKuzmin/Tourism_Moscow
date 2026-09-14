@@ -49,7 +49,7 @@
     },
     {
       "id": "vdnkh-retro",
-      "status": "pending",
+      "status": "published",
       "tour": "metro",
       "slug": {
         "ru": "vdnkh-imperiya-fontanov",
@@ -77,7 +77,8 @@
           "Stalinist architecture",
           "Cosmos pavilion"
         ]
-      }
+      },
+      "publishedAt": "2026-09-21"
     },
     {
       "id": "moscow-city-heights",
