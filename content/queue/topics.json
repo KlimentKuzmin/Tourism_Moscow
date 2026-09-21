@@ -82,7 +82,7 @@
     },
     {
       "id": "moscow-city-heights",
-      "status": "pending",
+      "status": "published",
       "tour": "river",
       "slug": {
         "ru": "moskva-siti-s-vysoty",
@@ -111,7 +111,8 @@
           "sunset",
           "skyscrapers"
         ]
-      }
+      },
+      "publishedAt": "2026-09-28"
     },
     {
       "id": "kolomenskoye",
